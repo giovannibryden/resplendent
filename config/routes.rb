@@ -1,4 +1,5 @@
 Resplendent::Application.routes.draw do
+  get "static/affiliates"
   get "static/home"
   get "static/about"
   get "static/contact"

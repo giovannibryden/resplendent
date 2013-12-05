@@ -6,6 +6,11 @@ class StaticControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "should get affiliates" do
+    get :affiliates
+    assert_response :success
+  end
+
   test "should get about" do
     get :about
     assert_response :success

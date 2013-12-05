@@ -1,3 +1,65 @@
 // Place all the styles related to the static controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Layout styling
+* {
+	margin:0;
+}
+
+html, body {
+	height:100%;
+}
+
+.container-narrow {
+	max-width:700px;
+	min-height:100%;
+	height:auto !important;
+	margin:0 auto -110px;
+	margin-top:15px;
+}
+
+#push {
+	height:50px;
+}
+
+// Header styling
+
+.masthead {
+	.title {
+		color:#d1a319;
+		text-shadow: 2px 2px #a6a6a6;
+	}
+}
+
+// Home page styling
+
+.home {
+	h1, p {
+		text-align:center;
+	}
+	.container {
+		max-width:700px;
+		margin:auto;
+	}
+	img.blackjack {
+		display:block;
+		margin:auto;
+	}
+}
+
+// Footer styling
+
+#footer {
+	margin:auto;
+	font-size:16px;	
+	height:60px;
+	margin:auto;
+	.container {
+		max-width:700px;
+		line-height:50px;
+		p {
+
+		}
+	}
+}
