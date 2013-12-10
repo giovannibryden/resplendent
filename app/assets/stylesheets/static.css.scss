@@ -4,6 +4,11 @@
 
 /* universal */
 
+.container {
+	max-width:700px;
+	margin:auto;
+}
+
 html {
   overflow-y: scroll;
 }
@@ -94,10 +99,6 @@ html, body {
 	h1, p {
 		text-align:center;
 	}
-	.container {
-		max-width:700px;
-		margin:auto;
-	}
 	img.blackjack {
 		display:block;
 		margin:auto;
@@ -126,5 +127,16 @@ html, body {
 		p {
 
 		}
+	}
+}
+
+// Show user page
+
+.user_info {
+	h1, h2, h3, h4 {
+		margin:0;
+	}
+	.balance {
+		padding-top:20px;
 	}
 }
