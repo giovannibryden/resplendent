@@ -1,9 +1,11 @@
 Resplendent::Application.routes.draw do
+  resources :users
   get "/" => "static#home"
   get "/affiliates" => "static#affiliates"
   get "/home" => "static#home"
   get "/about" => "static#about"
   root "static#home"
+  get "/signup" => "users#new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
