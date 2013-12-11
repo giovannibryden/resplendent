@@ -1,5 +1,6 @@
 Resplendent::Application.routes.draw do
-  resources :users
+  # resources :users
+  get "/users/:name(.:format)" => "users#show"
   get "/" => "static#home"
   get "/affiliates" => "static#affiliates"
   get "/home" => "static#home"
