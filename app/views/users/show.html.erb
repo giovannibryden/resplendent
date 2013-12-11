@@ -7,11 +7,15 @@
 		<h3><%= @user.name %></h3>
 		<h4 class="balance">
 		Balance: 
+
 		<% if @user.balance.nil? %>
-		<%= 0 %>
+			<%= 0 %>
+		<% elsif @user.balance.to_i > 0 %>
+			<span class="green"><%= @user.balance %></span>
 		<% else %>
-		<%= @user.balance %>
+			<span class="red"><%= @user.balance %></span>
 		<% end %>
+
 			 <i class="icon-thumbs-up"></i>
 		</h4>
 	</div>
