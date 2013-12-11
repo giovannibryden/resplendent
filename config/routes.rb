@@ -1,12 +1,18 @@
 Resplendent::Application.routes.draw do
-  # resources :users
-  get "/users/:name(.:format)" => "users#show"
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+  
+  get "/profile/:name(.:format)" => "users#show"
+  
   get "/" => "static#home"
   get "/affiliates" => "static#affiliates"
   get "/home" => "static#home"
   get "/about" => "static#about"
   root "static#home"
+  
   get "/signup" => "users#new"
+  get "/signin" => "sessions#new"
+  get "/signout" => "sessions#destroy"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
