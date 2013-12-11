@@ -2,7 +2,7 @@ Resplendent::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   
-  get "/profile/:name(.:format)" => "users#show"
+  # get "/profile/:name(.:format)" => "users#show"
   
   get "/" => "static#home"
   get "/affiliates" => "static#affiliates"
