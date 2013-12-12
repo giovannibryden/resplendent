@@ -3,7 +3,15 @@
 		<li><a href="/" title="Home">Home</a></li>
 		<li><a href="/about" title="About">About</a></li>
 		<li><a href="/affiliates" title="Affiliates">Affiliates</a></li>
-		<li><a href="/signin" title="Sign up">Sign in</a></li>
+		
+		<% if signed_in? %>
+
+			<li><%= link_to "Profile", current_user %></li>
+			<li><a href="/signout" title="Sign out">Sign out</a></li>
+
+		<% else %>
+			<li><a href="/signin" title="Sign up">Sign in</a></li>
+		<% end %>
 	</ul>
 	<h3 class="title">THE RESPLENDENT</h3>
 </div>
