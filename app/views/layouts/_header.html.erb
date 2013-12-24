@@ -9,6 +9,12 @@
 			<li><%= link_to "Profile", current_user %></li>
 			<li><a href="/signout" title="Sign out">Sign out</a></li>
 
+			<% if current_user.admin? %>
+
+				<li><a href="/edit" title="Edit">Edit users</a></li>
+
+			<% end %>
+
 		<% else %>
 
 			<li><a href="/signin" title="Sign in">Sign in</a></li>
