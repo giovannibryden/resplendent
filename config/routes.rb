@@ -12,4 +12,6 @@ Resplendent::Application.routes.draw do
   get "/signin" => "sessions#new"
   get "/signout" => "sessions#destroy"
 
+  get "/edit" => "users#edit"
+
 end
