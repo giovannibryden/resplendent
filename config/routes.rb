@@ -12,9 +12,4 @@ Resplendent::Application.routes.draw do
   get "/signin" => "sessions#new"
   get "/signout" => "sessions#destroy"
 
-  # Create admin namespace, route to admin controller
-  namespace :admin do
-    get "/admin" => "admin#index"  
-  end
-
 end
