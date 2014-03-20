@@ -9,7 +9,7 @@
 			<li><%= link_to "Profile", current_user %></li>
 			<li><a href="/signout" title="Sign out">Sign out</a></li>
 
-			<% if current_user.admin? %>
+			<% if admin? %>
 
 				<li><a href="/edit" title="Edit">Edit users</a></li>
 
